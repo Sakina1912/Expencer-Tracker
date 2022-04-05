@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  background-color: #DCC92D;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.container{
+  min-width: 500px;
+  height: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.incomeAndExpence, .buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* margin: 15px auto auto auto; */
+  margin-top: 25px;
+}
+
+input{
+  border: 2px solid #89897A;
+}
+
+input:focus{
+  border: 0;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+button{
+  padding: 10px 15px;
+  border: 1px solid #89897A;
+  border-radius: 5px;
+  background-color: #89897A;
+}
+
+ul{
+  /* border: 2px solid red; */
+  list-style: none;
+}
+li{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border: 1px solid #fff;
+  margin: 5px auto;
+}
+
+#income{
+  background-color: rgb(121, 233, 121);
+}
+
+#expence{
+  background-color: rgb(235, 133, 133);
 }
